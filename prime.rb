@@ -1,6 +1,6 @@
 
-def prime?(integer)
-  i = 2 
+def prime?(number)
+  start = 2 
   if integer > 1 
     set = (start..integer - 1).to_a 
     set.none? do 
