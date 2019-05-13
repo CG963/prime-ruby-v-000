@@ -1,5 +1,12 @@
 
 def prime?(integer)
-  (2..(integer - 1).each {|x| return false if (integer % x) == 0}
-  true)
+  i = 2 
+  if integer > 1 
+    set = (start..integer - 1).to_a 
+    set.none? do 
+      |num_to_test| number % num_to_test == 0 
+    end
+  else 
+    false
+  end
 end
